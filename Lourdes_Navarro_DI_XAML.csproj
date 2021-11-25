@@ -6,4 +6,26 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="app_bg.png" />
+    <None Remove="contacto_icon.png" />
+    <None Remove="form_bg.jpg" />
+    <None Remove="home.png" />
+    <None Remove="minijuego_icon.png" />
+    <None Remove="piscina_icon.png" />
+    <None Remove="pool_bg.jpg" />
+    <None Remove="salas_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="app_bg.png" />
+    <Resource Include="contacto_icon.png" />
+    <Resource Include="form_bg.jpg" />
+    <Resource Include="home.png" />
+    <Resource Include="minijuego_icon.png" />
+    <Resource Include="piscina_icon.png" />
+    <Resource Include="pool_bg.jpg" />
+    <Resource Include="salas_icon.png" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,50 @@
+﻿<Window x:Class="Lourdes_Navarro_DI_XAML.AppPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
+        mc:Ignorable="d"
+        Title="AppPrincipal" Height="450" Width="800">
+    <Grid>
+        <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl">
+                    <Image Source="/piscina_icon.png" Height="127" Width="223"></Image>
+                </Button>
+                <TextBlock Text="Control de piscinas" HorizontalAlignment="Center" FontSize="22"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,10,0,13">
+                    <Image Source="/salas_icon.png" Height="102" Width="198"></Image>
+                </Button>
+                <TextBlock HorizontalAlignment="Center" Text="Salas del acuario" FontSize="22"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="0">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Height="126">
+                    <Image Source="/minijuego_icon.png" Width="218"></Image>
+                </Button>
+                <TextBlock Text="Minijuego" HorizontalAlignment="Center" FontSize="22"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,10,0,10" Height="103">
+                    <Image Source="/contacto_icon.png"></Image>
+                </Button>
+                <TextBlock Text="Contacto" HorizontalAlignment="Center" FontSize="22"></TextBlock>
+            </StackPanel>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Home" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/home.png" Width="50"></Image>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

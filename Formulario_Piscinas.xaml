@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lourdes_Navarro_DI_XAML.Formulario_Piscinas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
+        mc:Ignorable="d"
+        Title="Formulario_Piscinas" Height="300" Width="380">
+    <Grid>
+        <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
+        <StackPanel Height="188" Margin="32,37,256,59" Width="92">
+            <Label Content="Sala" Height="23"></Label>
+            <Label Content="Temperatura" Height="28"></Label>
+            <Label Content="Especies" Height="27"></Label>
+            <Label Content="Última revisión"></Label>
+            <Label Content="Tratamiento"></Label>
+        </StackPanel>
+        <StackPanel Height="161" HorizontalAlignment="Left" VerticalAlignment="Top" Width="198" Margin="130,37,0,0">
+            <ComboBox x:Name="ComboBoxSalas" Height="26"></ComboBox>
+            <TextBox x:Name="tb_temp" Text="{Binding Path=Temperatura}" Height="26"/>
+            <TextBox x:Name="tb_esp" Text="{Binding Path=Especies}" Height="26"/>
+            <DatePicker x:Name="dp_revision" SelectedDate="{Binding Path=UltimaRevision}" Height="26"></DatePicker>
+            <TextBox x:Name="tb_tratam" Text="{Binding Path=Tratamiento}" Height="26"/>
+        </StackPanel>
+        <Button Margin="56,228,256,23" Content="Agregar" Click="Agregar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
+        <Button Margin="239,228,73,23" Content="Cancelar" Click="Cancelar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
+    </Grid>
+</Window>

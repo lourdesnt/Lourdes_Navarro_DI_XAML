@@ -30,8 +30,8 @@ namespace Lourdes_Navarro_DI_XAML.modelo
             }
         }
 
-        private string[] especies;
-        public string[] Especies
+        private string especies;
+        public string Especies
         {
             get { return especies; }
             set
@@ -70,7 +70,7 @@ namespace Lourdes_Navarro_DI_XAML.modelo
 
         }
 
-        public Piscina(Sala sala, string temperatura, string[] especies, DateTime ultimaRevision, string tratamiento)
+        public Piscina(Sala sala, string temperatura, string especies, DateTime ultimaRevision, string tratamiento)
         {
             this.sala = sala;
             this.temperatura = temperatura;
