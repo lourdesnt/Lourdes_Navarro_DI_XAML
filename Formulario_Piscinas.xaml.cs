@@ -25,25 +25,27 @@ namespace Lourdes_Navarro_DI_XAML
         public Formulario_Piscinas()
         {
             InitializeComponent();
-            ComboBoxSalas.ItemsSource = Enum.GetValues(typeof(Sala)).Cast<Sala>();
             this.index = -1;
             piscina = new Piscina();
+            ComboBoxSalas.ItemsSource = Piscina.Salas;
             this.DataContext = piscina;
         }
 
         public Formulario_Piscinas(int index)
         {
             InitializeComponent();
-            ComboBoxSalas.ItemsSource = Enum.GetValues(typeof(Sala)).Cast<Sala>();
             this.index = index;
-            ControlWindow.logica.ListaPiscinas.ElementAt(index);
+            piscina = new Piscina();
+            ComboBoxSalas.ItemsSource = Piscina.Salas;
+            ComboBoxSalas.SelectedItem = ControlWindow.logica.ListaPiscinas.ElementAt(index).Sala;
+            this.DataContext = ControlWindow.logica.ListaPiscinas.ElementAt(index);
         }
 
         private void Agregar(object sender, RoutedEventArgs e)
         {
             if(index > -1)
             {
-                piscina = new Piscina((Sala)ComboBoxSalas.SelectedItem, tb_temp.Text, tb_esp.Text, (DateTime)dp_revision.SelectedDate, tb_tratam.Text);
+                piscina = new Piscina(ComboBoxSalas.SelectedItem.ToString(), tb_temp.Text, tb_esp.Text, (DateTime)dp_revision.SelectedDate, tb_tratam.Text);
                 ControlWindow.logica.Modificar(index, piscina);
                 this.Close();
             } else

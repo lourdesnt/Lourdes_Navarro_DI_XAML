@@ -5,11 +5,13 @@ using System.Text;
 
 namespace Lourdes_Navarro_DI_XAML.modelo
 {
-    public enum Sala { Tropical, Crustaceos, Mamiferos };
+
     public class Piscina : INotifyPropertyChanged
     {
-        public Sala sala;
-        public Sala Sala
+        public static List<string> Salas = new List<string>() { "Tropical", "Crustáceos", "Mamíferos" };
+
+        public string sala;
+        public string Sala
         {
             get { return sala; }
             set
@@ -70,7 +72,7 @@ namespace Lourdes_Navarro_DI_XAML.modelo
 
         }
 
-        public Piscina(Sala sala, string temperatura, string especies, DateTime ultimaRevision, string tratamiento)
+        public Piscina(string sala, string temperatura, string especies, DateTime ultimaRevision, string tratamiento)
         {
             this.sala = sala;
             this.temperatura = temperatura;
