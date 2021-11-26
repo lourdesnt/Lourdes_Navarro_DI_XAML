@@ -53,7 +53,7 @@ namespace Lourdes_Navarro_DI_XAML {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Lourdes_Navarro_DI_XAML;component/appprincipal.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Lourdes_Navarro_DI_XAML;V1.0.0.0;component/appprincipal.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AppPrincipal.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

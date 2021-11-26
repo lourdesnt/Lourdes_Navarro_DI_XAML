@@ -1,0 +1,33 @@
+﻿<Window x:Class="Lourdes_Navarro_DI_XAML.SalaTropical"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
+        mc:Ignorable="d"
+        Title="SalaTropical" Height="450" Width="800">
+    <Grid>
+        <Image Source="imagenes/sala_tropical_bg.png" Stretch="UniformToFill"></Image>
+        <StackPanel Margin="80,0,80,0">
+            <TextBlock Text="SALA TROPICAL" FontSize="24" VerticalAlignment="Top" FontWeight="DemiBold" Foreground="DeepSkyBlue" Background="AliceBlue" HorizontalAlignment="Center" Margin="0,10,0,0" ></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0,20,0,10">¡Disfruta de la zona más colorida del Acuario!</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Encontrarás a todas aquellas especies de peces que provienen de las regiones cálidas del globo,</TextBlock>
+            <TextBlock HorizontalAlignment="Center">habitualmente comprendidas entre el trópico de Cáncer y el trópico de Capricornio.</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">Estas zonas del mundo están sometidas a temperaturas relativamente elevadas durante todo el año,</TextBlock>
+            <TextBlock HorizontalAlignment="Center">y tienen una buena exposición al sol.</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">En la ZONA TROPICAL podrás encontrar:</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Pez Mandarín, Pez Escorpión, Pez Araña, Caballito de Mar, Pez Payaso, Pez Cirujano...</TextBlock>
+            <Grid Height="172" Margin="0,0,0,10">
+                <Image Source="imagenes/pezmandarin.jpg" Margin="55,10,449,86"></Image>
+                <Image Source="imagenes/pezescorpion.jpg" Margin="252,10,252,86"></Image>
+                <Image Source="imagenes/pezarana.jpg" Margin="449,10,55,86"></Image>
+                <Image Source="imagenes/caballito.jpg" Margin="55,96,449,0"></Image>
+                <Image Source="imagenes/pezpayaso.jpg" Margin="252,96,252,0"></Image>
+                <Image Source="imagenes/pezcirujano.jpg" Margin="449,96,55,0"></Image>
+            </Grid>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Click="Home" Height="47" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/back.png"></Image>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
