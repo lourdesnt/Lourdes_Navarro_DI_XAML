@@ -9,35 +9,63 @@
   <ItemGroup>
     <None Remove="app_bg.png" />
     <None Remove="back.png" />
+    <None Remove="ballena.jpg" />
+    <None Remove="caballito.jpg" />
     <None Remove="contacto_icon.png" />
+    <None Remove="delfin.jpg" />
     <None Remove="form_bg.jpg" />
     <None Remove="home.png" />
+    <None Remove="marsopa.jpg" />
     <None Remove="minijuego_icon.png" />
+    <None Remove="pezarana.jpg" />
+    <None Remove="pezcirujano.jpg" />
+    <None Remove="pezescorpion.jpg" />
+    <None Remove="pezguitarra.jpg" />
+    <None Remove="pezmandarin.jpg" />
+    <None Remove="pezpayaso.jpg" />
     <None Remove="piscina_icon.png" />
     <None Remove="pool_bg.jpg" />
     <None Remove="salas_icon.png" />
     <None Remove="sala_crustaceos.jpg" />
     <None Remove="sala_mamiferos.jpg" />
+    <None Remove="sala_mamiferos_bg.png" />
     <None Remove="sala_medusas.jpg" />
     <None Remove="sala_tiburones.jpg" />
+    <None Remove="sala_tiburones_bg.png" />
     <None Remove="sala_tropical.jpg" />
+    <None Remove="tibpuntanegra.jpg" />
+    <None Remove="tibtoro.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="app_bg.png" />
     <Resource Include="back.png" />
+    <Resource Include="ballena.jpg" />
+    <Resource Include="caballito.jpg" />
     <Resource Include="contacto_icon.png" />
+    <Resource Include="delfin.jpg" />
     <Resource Include="form_bg.jpg" />
     <Resource Include="home.png" />
+    <Resource Include="marsopa.jpg" />
     <Resource Include="minijuego_icon.png" />
+    <Resource Include="pezarana.jpg" />
+    <Resource Include="pezcirujano.jpg" />
+    <Resource Include="pezescorpion.jpg" />
+    <Resource Include="pezguitarra.jpg" />
+    <Resource Include="pezmandarin.jpg" />
+    <Resource Include="pezpayaso.jpg" />
     <Resource Include="piscina_icon.png" />
     <Resource Include="pool_bg.jpg" />
     <Resource Include="salas_icon.png" />
     <Resource Include="sala_crustaceos.jpg" />
     <Resource Include="sala_mamiferos.jpg" />
+    <Resource Include="sala_mamiferos_bg.png" />
     <Resource Include="sala_medusas.jpg" />
     <Resource Include="sala_tiburones.jpg" />
+    <Resource Include="sala_tiburones_bg.png" />
     <Resource Include="sala_tropical.jpg" />
+    <Resource Include="tibpuntanegra.jpg" />
+    <Resource Include="tibtoro.jpg" />
   </ItemGroup>
 
 </Project>

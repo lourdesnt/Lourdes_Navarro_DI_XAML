@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace Lourdes_Navarro_DI_XAML
 {
     /// <summary>
-    /// Lógica de interacción para SalaTropical.xaml
+    /// Lógica de interacción para SalaGrandesMamiferos.xaml
     /// </summary>
-    public partial class SalaTropical : Window
+    public partial class SalaGrandesMamiferos : Window
     {
-        public SalaTropical()
+        public SalaGrandesMamiferos()
         {
             InitializeComponent();
         }
