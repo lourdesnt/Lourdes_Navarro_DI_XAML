@@ -22,27 +22,27 @@
             </Grid.ColumnDefinitions>
             <TextBlock Text=" SALAS DEL ACUARIO " Grid.Row="0" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Center" FontWeight="DemiBold" Foreground="DeepSkyBlue" HorizontalAlignment="Center"></TextBlock>
             <StackPanel Grid.Row="1" Grid.Column="0">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl" Height="150" Width="223">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goSalaTropical" Height="150" Width="223">
                     <Image Source="/sala_tropical.jpg"></Image>
                 </Button>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl" Height="150" Width="223">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goSalaMamiferos" Height="150" Width="223">
                     <Image Source="/sala_mamiferos.jpg"></Image>
                 </Button>
             </StackPanel>
             <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl" Height="150" Width="223">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goSalaTiburones" Height="150" Width="223">
                     <Image Source="/sala_tiburones.jpg"></Image>
                 </Button>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="0">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl" Height="150" Width="223">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goSalaCrustaceos" Height="150" Width="223">
                     <Image Source="/sala_crustaceos.jpg"></Image>
                 </Button>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="1">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl" Height="150" Width="223">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goSalaMedusas" Height="150" Width="223">
                     <Image Source="/sala_medusas.jpg"></Image>
                 </Button>
             </StackPanel>

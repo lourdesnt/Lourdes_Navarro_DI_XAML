@@ -16,7 +16,13 @@
     <Compile Update="Formulario_Piscinas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SalaCrustaceos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SalaGrandesMamiferos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SalaMedusas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Salas.xaml.cs">
@@ -42,7 +48,13 @@
     <Page Update="Formulario_Piscinas.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="SalaCrustaceos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="SalaGrandesMamiferos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SalaMedusas.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Salas.xaml">

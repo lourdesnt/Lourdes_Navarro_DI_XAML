@@ -1,0 +1,32 @@
+﻿<Window x:Class="Lourdes_Navarro_DI_XAML.SalaCrustaceos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
+        mc:Ignorable="d"
+        Title="SalaCrustaceos" Height="450" Width="800">
+    <Grid>
+        <Image Source="imagenes/sala_crustaceos_bg.png" Stretch="UniformToFill"></Image>
+        <StackPanel Margin="80,0,80,0">
+            <TextBlock Text="SALA CRUSTÁCEOS" FontSize="24" VerticalAlignment="Top" FontWeight="DemiBold" Foreground="DeepSkyBlue" Background="AliceBlue" HorizontalAlignment="Center" Margin="0,10,0,0" ></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0,20,0,10">¡Mira cómo se mueven!</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Los crustáceos son los invertebrados marinos: no poseen columna vertebral ni esqueleto interno articulado.</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Estas especies mudan su su exoesqueleto periódicamente.</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">¡Con su cefalotórax, su cola, sus patas y sus antenas estos animales son muy bonitos de ver!</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">En la ZONA CRUSTÁCEOS podrás encontrar:</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10">Cangrejo Violinista, Langosta, Gamba, Camarón, Cangrejo ermitaño, Caracol Helena...</TextBlock>
+            <Grid Height="172" Margin="0,0,0,10">
+                <Image Source="/cangrejoviolinista.jpg" Margin="55,10,449,86"></Image>
+                <Image Source="/langosta.jpg" Margin="252,10,252,86"></Image>
+                <Image Source="/gamba.jpg" Margin="449,10,55,86"></Image>
+                <Image Source="/camaron.jpg" Margin="55,96,449,0"></Image>
+                <Image Source="/cangrejoermitano.jpg" Margin="252,96,252,0"></Image>
+                <Image Source="/caracolhelena.jpg" Margin="449,96,55,0"></Image>
+            </Grid>
+            <Button HorizontalAlignment="Center" Click="Atras" Height="47" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/back.png"></Image>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

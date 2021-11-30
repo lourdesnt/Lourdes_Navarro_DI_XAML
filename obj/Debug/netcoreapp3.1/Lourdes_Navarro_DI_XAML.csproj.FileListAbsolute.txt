@@ -24,3 +24,15 @@ C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\De
 C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\Lourdes_Navarro_DI_XAML.dll
 C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\Lourdes_Navarro_DI_XAML.pdb
 C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\Lourdes_Navarro_DI_XAML.genruntimeconfig.cache
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaCrustaceos.g.cs
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaGrandesMamiferos.g.cs
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaMedusas.g.cs
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\Salas.g.cs
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaTiburones.g.cs
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaTropical.g.cs
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaCrustaceos.baml
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaGrandesMamiferos.baml
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaMedusas.baml
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\Salas.baml
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaTiburones.baml
+C:\Users\lourd\Desktop\Estudios\FP\Des Interfaces\Lourdes_Navarro_DI_XAML\obj\Debug\netcoreapp3.1\SalaTropical.baml

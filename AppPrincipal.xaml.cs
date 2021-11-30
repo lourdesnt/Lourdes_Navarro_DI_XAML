@@ -29,6 +29,13 @@ namespace Lourdes_Navarro_DI_XAML
 
         }
 
+        private void goSalas(object sender, RoutedEventArgs e)
+        {
+            new Salas().Show();
+            this.Close();
+
+        }
+
         private void Home(object sender, RoutedEventArgs e)
         {
             new MainWindow().Show();

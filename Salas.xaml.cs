@@ -27,5 +27,35 @@ namespace Lourdes_Navarro_DI_XAML
             new MainWindow().Show();
             this.Close();
         }
+
+        private void goSalaTropical(object sender, RoutedEventArgs e)
+        {
+            new SalaTropical().Show();
+            this.Close();
+        }
+
+        private void goSalaMamiferos(object sender, RoutedEventArgs e)
+        {
+            new SalaGrandesMamiferos().Show();
+            this.Close();
+        }
+
+        private void goSalaTiburones(object sender, RoutedEventArgs e)
+        {
+            new SalaTiburones().Show();
+            this.Close();
+        }
+
+        private void goSalaCrustaceos(object sender, RoutedEventArgs e)
+        {
+            new SalaCrustaceos().Show();
+            this.Close();
+        }
+
+        private void goSalaMedusas(object sender, RoutedEventArgs e)
+        {
+            new SalaMedusas().Show();
+            this.Close();
+        }
     }
 }
