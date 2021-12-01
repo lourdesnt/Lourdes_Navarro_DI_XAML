@@ -37,7 +37,7 @@
                 <TextBlock Text="Minijuego" HorizontalAlignment="Center" FontSize="22"></TextBlock>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,10,0,10" Height="103">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,10,0,10" Height="103" Click="goContacto">
                     <Image Source="/contacto_icon.png"></Image>
                 </Button>
                 <TextBlock Text="Contacto" HorizontalAlignment="Center" FontSize="22"></TextBlock>

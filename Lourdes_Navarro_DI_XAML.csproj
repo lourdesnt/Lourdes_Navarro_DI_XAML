@@ -36,6 +36,7 @@
     <None Remove="pool_bg.jpg" />
     <None Remove="salas_icon.png" />
     <None Remove="sala_crustaceos.jpg" />
+    <None Remove="sala_crustaceos_bg.png" />
     <None Remove="sala_mamiferos.jpg" />
     <None Remove="sala_mamiferos_bg.png" />
     <None Remove="sala_medusas.jpg" />
@@ -78,6 +79,7 @@
     <Resource Include="pool_bg.jpg" />
     <Resource Include="salas_icon.png" />
     <Resource Include="sala_crustaceos.jpg" />
+    <Resource Include="sala_crustaceos_bg.png" />
     <Resource Include="sala_mamiferos.jpg" />
     <Resource Include="sala_mamiferos_bg.png" />
     <Resource Include="sala_medusas.jpg" />

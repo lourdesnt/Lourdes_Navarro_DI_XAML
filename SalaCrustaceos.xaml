@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="SalaCrustaceos" Height="450" Width="800">
     <Grid>
-        <Image Source="imagenes/sala_crustaceos_bg.png" Stretch="UniformToFill"></Image>
+        <Image Source="/sala_crustaceos_bg.png" Stretch="UniformToFill"></Image>
         <StackPanel Margin="80,0,80,0">
             <TextBlock Text="SALA CRUSTÁCEOS" FontSize="24" VerticalAlignment="Top" FontWeight="DemiBold" Foreground="DeepSkyBlue" Background="AliceBlue" HorizontalAlignment="Center" Margin="0,10,0,0" ></TextBlock>
             <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0,20,0,10">¡Mira cómo se mueven!</TextBlock>
             <TextBlock HorizontalAlignment="Center">Los crustáceos son los invertebrados marinos: no poseen columna vertebral ni esqueleto interno articulado.</TextBlock>
-            <TextBlock HorizontalAlignment="Center">Estas especies mudan su su exoesqueleto periódicamente.</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Estas especies mudan su exoesqueleto periódicamente.</TextBlock>
             <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">¡Con su cefalotórax, su cola, sus patas y sus antenas estos animales son muy bonitos de ver!</TextBlock>
             <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">En la ZONA CRUSTÁCEOS podrás encontrar:</TextBlock>
             <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10">Cangrejo Violinista, Langosta, Gamba, Camarón, Cangrejo ermitaño, Caracol Helena...</TextBlock>

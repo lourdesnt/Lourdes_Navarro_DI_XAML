@@ -13,36 +13,14 @@ using System.Windows.Shapes;
 namespace Lourdes_Navarro_DI_XAML
 {
     /// <summary>
-    /// Lógica de interacción para AppPrincipal.xaml
+    /// Lógica de interacción para Contacto.xaml
     /// </summary>
-    public partial class AppPrincipal : Window
+    public partial class Contacto : Window
     {
-        public AppPrincipal()
+        public Contacto()
         {
             InitializeComponent();
         }
-
-        private void goControl(object sender, RoutedEventArgs e)
-        {
-            new ControlWindow().Show();
-            this.Close();
-
-        }
-
-        private void goSalas(object sender, RoutedEventArgs e)
-        {
-            new Salas().Show();
-            this.Close();
-
-        }
-
-        private void goContacto(object sender, RoutedEventArgs e)
-        {
-            new Contacto().Show();
-            this.Close();
-
-        }
-
         private void Home(object sender, RoutedEventArgs e)
         {
             new MainWindow().Show();
