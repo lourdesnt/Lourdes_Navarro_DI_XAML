@@ -36,6 +36,13 @@ namespace Lourdes_Navarro_DI_XAML
 
         }
 
+        private void goMinijuego(object sender, RoutedEventArgs e)
+        {
+            new Minijuego().Show();
+            this.Close();
+
+        }
+
         private void goContacto(object sender, RoutedEventArgs e)
         {
             new Contacto().Show();

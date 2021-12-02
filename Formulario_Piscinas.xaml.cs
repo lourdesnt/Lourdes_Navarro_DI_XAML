@@ -27,7 +27,7 @@ namespace Lourdes_Navarro_DI_XAML
             InitializeComponent();
             this.index = -1;
             piscina = new Piscina();
-            ComboBoxSalas.ItemsSource = Piscina.Salas;
+            ComboBoxSalas.SelectedIndex = 0;
             this.DataContext = piscina;
         }
 
@@ -36,7 +36,6 @@ namespace Lourdes_Navarro_DI_XAML
             InitializeComponent();
             this.index = index;
             piscina = new Piscina();
-            ComboBoxSalas.ItemsSource = Piscina.Salas;
             ComboBoxSalas.SelectedItem = ControlWindow.logica.ListaPiscinas.ElementAt(index).Sala;
             this.DataContext = ControlWindow.logica.ListaPiscinas.ElementAt(index);
         }
@@ -45,12 +44,13 @@ namespace Lourdes_Navarro_DI_XAML
         {
             if(index > -1)
             {
-                piscina = new Piscina(ComboBoxSalas.SelectedItem.ToString(), tb_temp.Text, tb_esp.Text, (DateTime)dp_revision.SelectedDate, tb_tratam.Text);
+                piscina = new Piscina(ComboBoxSalas.Text, tb_temp.Text, tb_esp.Text, (DateTime)dp_revision.SelectedDate, tb_tratam.Text);
                 ControlWindow.logica.Modificar(index, piscina);
                 this.Close();
             } else
             {
                 ControlWindow.logica.Agregar(piscina);
+                this.Close();
             }
             piscina = new Piscina();
             this.DataContext = piscina;
@@ -59,6 +59,25 @@ namespace Lourdes_Navarro_DI_XAML
         private void Cancelar(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        int errores;
+        private void Validation_Error(object sender, ValidationErrorEventArgs e)
+        {
+            if (e.Action == ValidationErrorEventAction.Added)
+            {
+                errores++;
+            } else
+            {
+                errores--;
+            }
+            if (errores == 0)
+            {
+                BtnAgregar.IsEnabled = true;
+            } else
+            {
+                BtnAgregar.IsEnabled = false;
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Lourdes_Navarro_DI_XAML.controlador
         public ControlPiscinas()
         {
             ListaPiscinas = new ObservableCollection<Piscina>();
-            ListaPiscinas.Add(new Piscina(Piscina.Salas[1], "20ºC", "Cangrejo, Langosta, Percebe", new DateTime(2021, 11, 23), "Desinfección de la piscina"));
+            ListaPiscinas.Add(new Piscina("Tropical", "20ºC", "Cangrejo, Langosta, Percebe", new DateTime(2021, 11, 23), "Desinfección de la piscina"));
         }
 
         public void Agregar(Piscina piscina)

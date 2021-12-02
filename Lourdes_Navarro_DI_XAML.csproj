@@ -10,6 +10,7 @@
     <None Remove="app_bg.png" />
     <None Remove="back.png" />
     <None Remove="ballena.jpg" />
+    <None Remove="bubble.png" />
     <None Remove="caballito.jpg" />
     <None Remove="camaron.jpg" />
     <None Remove="cangrejoermitano.jpg" />
@@ -17,10 +18,13 @@
     <None Remove="caracolhelena.jpg" />
     <None Remove="contacto_icon.png" />
     <None Remove="delfin.jpg" />
+    <None Remove="erizo.png" />
     <None Remove="form_bg.jpg" />
     <None Remove="gamba.jpg" />
+    <None Remove="game_bg.png" />
     <None Remove="home.png" />
     <None Remove="langosta.jpg" />
+    <None Remove="mapa.png" />
     <None Remove="marsopa.jpg" />
     <None Remove="medusainmortal.jpg" />
     <None Remove="medusaluna.jpg" />
@@ -45,6 +49,7 @@
     <None Remove="sala_tiburones_bg.png" />
     <None Remove="sala_tropical.jpg" />
     <None Remove="sala_tropical_bg.png" />
+    <None Remove="star.png" />
     <None Remove="tibpuntanegra.jpg" />
     <None Remove="tibtoro.jpg" />
   </ItemGroup>
@@ -53,6 +58,7 @@
     <Resource Include="app_bg.png" />
     <Resource Include="back.png" />
     <Resource Include="ballena.jpg" />
+    <Resource Include="bubble.png" />
     <Resource Include="caballito.jpg" />
     <Resource Include="camaron.jpg" />
     <Resource Include="cangrejoermitano.jpg" />
@@ -60,10 +66,13 @@
     <Resource Include="caracolhelena.jpg" />
     <Resource Include="contacto_icon.png" />
     <Resource Include="delfin.jpg" />
+    <Resource Include="erizo.png" />
     <Resource Include="form_bg.jpg" />
     <Resource Include="gamba.jpg" />
+    <Resource Include="game_bg.png" />
     <Resource Include="home.png" />
     <Resource Include="langosta.jpg" />
+    <Resource Include="mapa.png" />
     <Resource Include="marsopa.jpg" />
     <Resource Include="medusainmortal.jpg" />
     <Resource Include="medusaluna.jpg" />
@@ -88,6 +97,7 @@
     <Resource Include="sala_tiburones_bg.png" />
     <Resource Include="sala_tropical.jpg" />
     <Resource Include="sala_tropical_bg.png" />
+    <Resource Include="star.png" />
     <Resource Include="tibpuntanegra.jpg" />
     <Resource Include="tibtoro.jpg" />
   </ItemGroup>

@@ -13,7 +13,7 @@
             <WrapPanel Margin="10">
                 <StackPanel>
                     <TextBlock Text="¿Dónde estamos?" FontSize="20" VerticalAlignment="Top" Foreground="DeepSkyBlue" HorizontalAlignment="Center" />
-                    <Image Source="imagenes/mapa.png" Height="203" Width="358" Margin="5"></Image>
+                    <Image Source="/mapa.png" Height="203" Width="358" Margin="5"></Image>
                     <TextBlock Text="Muelle de las Delicias. Área Sur. Puerto de Sevilla." FontSize="14" HorizontalAlignment="Left" />
                     <TextBlock Text="41012 (Sevilla, España)" FontSize="14" HorizontalAlignment="Left" />
                     <TextBlock Margin="0,5,0,0" Text="TLF.: (+34) 955 44 15 41   Email: info@acuariosevilla.es" FontSize="14" HorizontalAlignment="Left" />

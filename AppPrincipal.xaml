@@ -31,7 +31,7 @@
                 <TextBlock HorizontalAlignment="Center" Text="Salas del acuario" FontSize="22"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="0">
-                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Height="126">
+                <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Height="126" Click="goMinijuego">
                     <Image Source="/minijuego_icon.png" Width="218"></Image>
                 </Button>
                 <TextBlock Text="Minijuego" HorizontalAlignment="Center" FontSize="22"></TextBlock>

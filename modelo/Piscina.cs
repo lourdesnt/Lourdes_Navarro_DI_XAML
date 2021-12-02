@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Controls;
 
 namespace Lourdes_Navarro_DI_XAML.modelo
 {
 
-    public class Piscina : INotifyPropertyChanged
+    public class Piscina : INotifyPropertyChanged, IDataErrorInfo
     {
         public static List<string> Salas = new List<string>() { "Tropical", "Crustáceos", "Mamíferos", "Tiburones", "Medusas" };
 
@@ -65,6 +66,37 @@ namespace Lourdes_Navarro_DI_XAML.modelo
             }
         }
 
+        public string Error => throw new NotImplementedException();
+
+        public string this[string columnName]
+        {
+            get
+            {
+                string result = null;
+                if (columnName == "Temperatura")
+                {
+                    if (string.IsNullOrEmpty(temperatura))
+                        result = "Este campo no puede estar vacío";
+                }
+                if (columnName == "Especies")
+                {
+                    if (string.IsNullOrEmpty(especies))
+                        result = "Este campo no puede estar vacío";
+                }
+                if (columnName == "UltimaRevision")
+                {
+                    if (ultimaRevision.ToString().Equals(null))
+                        result = "Este campo no puede estar vacío";
+                }
+                if (columnName == "Tratamiento")
+                {
+                    if (string.IsNullOrEmpty(tratamiento))
+                        result = "Este campo no puede estar vacío";
+                }
+                return result;
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public Piscina()
@@ -81,5 +113,6 @@ namespace Lourdes_Navarro_DI_XAML.modelo
             this.tratamiento = tratamiento;
         }
 
+        
     }
 }

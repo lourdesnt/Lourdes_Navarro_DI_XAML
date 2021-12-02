@@ -16,13 +16,20 @@
             <Label Content="Tratamiento"></Label>
         </StackPanel>
         <StackPanel Height="161" HorizontalAlignment="Left" VerticalAlignment="Top" Width="198" Margin="130,37,0,0">
-            <ComboBox x:Name="ComboBoxSalas" Height="26"></ComboBox>
-            <TextBox x:Name="tb_temp" Text="{Binding Path=Temperatura}" Height="26"/>
-            <TextBox x:Name="tb_esp" Text="{Binding Path=Especies}" Height="26"/>
-            <DatePicker x:Name="dp_revision" SelectedDate="{Binding Path=UltimaRevision}" Height="26"></DatePicker>
-            <TextBox x:Name="tb_tratam" Text="{Binding Path=Tratamiento}" Height="26"/>
+            <ComboBox x:Name="ComboBoxSalas" Height="26" Text="{Binding Path=Sala}">
+                <ComboBoxItem Content="Tropical"/>
+                <ComboBoxItem Content="Crustáceos"/>
+                <ComboBoxItem Content="Mamíferos"/>
+                <ComboBoxItem Content="Tiburones"/>
+                <ComboBoxItem Content="Medusas"/>
+            </ComboBox>
+            <TextBox x:Name="tb_temp" Text="{Binding Path=Temperatura, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"/>
+            <TextBox x:Name="tb_esp" Text="{Binding Path=Especies, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"/>
+            <DatePicker x:Name="dp_revision" SelectedDate="{Binding Path=UltimaRevision, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"></DatePicker>
+            <TextBox x:Name="tb_tratam" Text="{Binding Path=Tratamiento, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"/>
         </StackPanel>
-        <Button Margin="56,228,256,23" Content="Agregar" Click="Agregar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
+        <Button Name="BtnAgregar" Margin="56,228,256,23" Content="Agregar" Click="Agregar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
         <Button Margin="239,228,73,23" Content="Cancelar" Click="Cancelar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
+    
     </Grid>
 </Window>

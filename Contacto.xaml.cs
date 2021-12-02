@@ -23,7 +23,7 @@ namespace Lourdes_Navarro_DI_XAML
         }
         private void Home(object sender, RoutedEventArgs e)
         {
-            new MainWindow().Show();
+            new AppPrincipal().Show();
             this.Close();
         }
     }

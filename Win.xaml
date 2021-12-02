@@ -1,0 +1,34 @@
+﻿<Window x:Class="Lourdes_Navarro_DI_XAML.Win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
+        mc:Ignorable="d"
+        Title="Win" Height="450" Width="800">
+    <Grid>
+        <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.Column="0" Source="/star.png" Margin="5"></Image>
+            <Image Grid.Row="0" Grid.Column="1" Source="/star.png" Margin="5"></Image>
+            <Image Grid.Row="0" Grid.Column="2" Source="/star.png" Margin="5"></Image>
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="¡HAS GANADO!" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontSize="36" FontWeight="Bold" Foreground="DarkGoldenrod"></TextBlock>
+            <Image Grid.Row="2" Grid.Column="0" Source="/star.png" Margin="5"></Image>
+            <Image Grid.Row="2" Grid.Column="1" Source="/star.png" Margin="5"></Image>
+            <Image Grid.Row="2" Grid.Column="2" Source="/star.png" Margin="5"></Image>
+            <Button Grid.Row="3" Grid.ColumnSpan="2"  Content="Volver a jugar" Click="Game" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="103"/>
+            <Button Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"  Content="Menú principal" Click="Home" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="103"/>
+        </Grid>
+    </Grid>
+</Window>

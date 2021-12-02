@@ -19,6 +19,12 @@
     <Compile Update="Formulario_Piscinas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GameOver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Minijuego.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SalaCrustaceos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +43,9 @@
     <Compile Update="SalaTropical.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Win.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AppPrincipal.xaml">
@@ -48,10 +57,16 @@
     <Page Update="ControlWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="GameOver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Formulario_Piscinas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Minijuego.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SalaCrustaceos.xaml">
@@ -70,6 +85,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SalaTropical.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
