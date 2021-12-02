@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
         mc:Ignorable="d"
-        Title="Salas" Height="600" Width="800">
+        Title="Salas" Height="600" Width="800" ResizeMode="NoResize">
     <Grid>
         <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
         <Grid>

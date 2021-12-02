@@ -5,31 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
         mc:Ignorable="d"
-        Title="Formulario_Piscinas" Height="300" Width="380">
+        Title="Formulario_Piscinas" Height="350" Width="380" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,2,40,2" />
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="true">
+                            <Border Background="Red" DockPanel.Dock="right" Margin="5,0,0,0" Width="20" Height="20" CornerRadius="10"
+                            ToolTip="{Binding ElementName=customAdorner, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+                                <TextBlock Text="!" VerticalAlignment="center" HorizontalAlignment="center" FontWeight="Bold" Foreground="white">
+                                </TextBlock>
+                            </Border>
+                            <AdornedElementPlaceholder Name="customAdorner" VerticalAlignment="Center" >
+                                <Border BorderBrush="red" BorderThickness="1" />
+                            </AdornedElementPlaceholder>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
-        <StackPanel Height="188" Margin="32,37,256,59" Width="92">
-            <Label Content="Sala" Height="23"></Label>
+        <StackPanel Margin="32,37,256,136" Width="92">
+            <Label Margin="0,0,0,5" Content="Sala" Height="23"></Label>
             <Label Content="Temperatura" Height="28"></Label>
             <Label Content="Especies" Height="27"></Label>
             <Label Content="Última revisión"></Label>
             <Label Content="Tratamiento"></Label>
         </StackPanel>
         <StackPanel Height="161" HorizontalAlignment="Left" VerticalAlignment="Top" Width="198" Margin="130,37,0,0">
-            <ComboBox x:Name="ComboBoxSalas" Height="26" Text="{Binding Path=Sala}">
-                <ComboBoxItem Content="Tropical"/>
-                <ComboBoxItem Content="Crustáceos"/>
-                <ComboBoxItem Content="Mamíferos"/>
-                <ComboBoxItem Content="Tiburones"/>
-                <ComboBoxItem Content="Medusas"/>
-            </ComboBox>
-            <TextBox x:Name="tb_temp" Text="{Binding Path=Temperatura, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"/>
-            <TextBox x:Name="tb_esp" Text="{Binding Path=Especies, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"/>
-            <DatePicker x:Name="dp_revision" SelectedDate="{Binding Path=UltimaRevision, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"></DatePicker>
-            <TextBox x:Name="tb_tratam" Text="{Binding Path=Tratamiento, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Height="26"/>
+            <ComboBox x:Name="ComboBoxSalas" Height="26" HorizontalAlignment="Left" Text="{Binding Path=Sala}" Width="158"></ComboBox>
+            <TextBox x:Name="tb_temp" Text="{Binding Path=Temperatura, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" Height="26" Width="158"/>
+            <TextBox x:Name="tb_esp" Text="{Binding Path=Especies, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" Height="26" Width="158"/>
+            <DatePicker x:Name="dp_revision" HorizontalAlignment="Left" SelectedDate="{Binding Path=UltimaRevision, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" Height="26" Width="158"></DatePicker>
+            <TextBox x:Name="tb_tratam" Text="{Binding Path=Tratamiento, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" Height="26" Width="158"/>
         </StackPanel>
-        <Button Name="BtnAgregar" Margin="56,228,256,23" Content="Agregar" Click="Agregar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
-        <Button Margin="239,228,73,23" Content="Cancelar" Click="Cancelar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
-    
+        <Button Name="BtnAgregar" Margin="56,228,243,51" Content="Agregar" Click="Agregar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
+        <Button Margin="238,228,56,51" Content="Cancelar" Click="Cancelar" Background="AliceBlue" Foreground="DodgerBlue" BorderBrush="DodgerBlue"></Button>
+
     </Grid>
 </Window>

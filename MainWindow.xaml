@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="480" Width="800" ResizeMode="NoResize">
     <Grid>
         <Image Source="/app_bg.png" Stretch="UniformToFill"></Image>
-        <Button Content="ENTRAR" Click="goApp" FontSize="20" HorizontalAlignment="Center" Margin="0,258,0,115" Background="DodgerBlue" Foreground="AliceBlue" BorderBrush="AliceBlue" Width="104"/>
+        <Button Content="ENTRAR" Click="goApp" FontSize="20" HorizontalAlignment="Center" Margin="0,258,0,132" Background="DodgerBlue" Foreground="AliceBlue" BorderBrush="AliceBlue" Width="104"/>
     </Grid>
 </Window>

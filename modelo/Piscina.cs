@@ -9,8 +9,7 @@ namespace Lourdes_Navarro_DI_XAML.modelo
 
     public class Piscina : INotifyPropertyChanged, IDataErrorInfo
     {
-        public static List<string> Salas = new List<string>() { "Tropical", "Crustáceos", "Mamíferos", "Tiburones", "Medusas" };
-
+        
         public string sala;
         public string Sala
         {

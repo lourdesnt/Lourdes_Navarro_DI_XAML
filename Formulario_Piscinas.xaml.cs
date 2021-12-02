@@ -21,12 +21,17 @@ namespace Lourdes_Navarro_DI_XAML
     {
         public Piscina piscina;
         private int index;
+        public static List<string> Salas = new List<string>() { "Tropical", "Crustáceos", "Mamíferos", "Tiburones", "Medusas" };
 
         public Formulario_Piscinas()
         {
             InitializeComponent();
             this.index = -1;
             piscina = new Piscina();
+            foreach(string s in Salas)
+            {
+                ComboBoxSalas.Items.Add(s);
+            }
             ComboBoxSalas.SelectedIndex = 0;
             this.DataContext = piscina;
         }
@@ -36,6 +41,10 @@ namespace Lourdes_Navarro_DI_XAML
             InitializeComponent();
             this.index = index;
             piscina = new Piscina();
+            foreach (string s in Salas)
+            {
+                ComboBoxSalas.Items.Add(s);
+            }
             ComboBoxSalas.SelectedItem = ControlWindow.logica.ListaPiscinas.ElementAt(index).Sala;
             this.DataContext = ControlWindow.logica.ListaPiscinas.ElementAt(index);
         }

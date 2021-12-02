@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
         mc:Ignorable="d"
-        Title="AppPrincipal" Height="450" Width="800">
+        Title="AppPrincipal" Height="480" Width="800" ResizeMode="NoResize">
     <Grid>
         <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -20,13 +20,13 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Row="0" Grid.Column="0">
                 <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goControl">
-                    <Image Source="/piscina_icon.png" Height="127" Width="223"></Image>
+                    <Image Source="/piscina_icon.png" Height="127" Width="218"></Image>
                 </Button>
                 <TextBlock Text="Control de piscinas" HorizontalAlignment="Center" FontSize="22"></TextBlock>
             </StackPanel>
             <StackPanel Grid.Row="0" Grid.Column="1">
                 <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="goSalas" Margin="0,10,0,13">
-                    <Image Source="/salas_icon.png" Height="102" Width="198"></Image>
+                    <Image Source="/salas_icon.png" Height="102" Width="218"></Image>
                 </Button>
                 <TextBlock HorizontalAlignment="Center" Text="Salas del acuario" FontSize="22"/>
             </StackPanel>
@@ -38,7 +38,7 @@
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1">
                 <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,10,0,10" Height="103" Click="goContacto">
-                    <Image Source="/contacto_icon.png"></Image>
+                    <Image Source="/contacto_icon.png" Width="218"></Image>
                 </Button>
                 <TextBlock Text="Contacto" HorizontalAlignment="Center" FontSize="22"></TextBlock>
             </StackPanel>

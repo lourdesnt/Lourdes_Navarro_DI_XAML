@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lourdes_Navarro_DI_XAML"
         mc:Ignorable="d"
-        Title="SalaTiburones" Height="450" Width="800">
+        Title="SalaTiburones" Height="480" Width="800" ResizeMode="NoResize">
     <Grid>
         <Image Source="/sala_tiburones_bg.png" Stretch="UniformToFill"></Image>
         <StackPanel Margin="80,0,80,0">
