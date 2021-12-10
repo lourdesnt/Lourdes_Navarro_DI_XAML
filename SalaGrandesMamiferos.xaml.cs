@@ -12,15 +12,15 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para SalaGrandesMamiferos.xaml
-    /// </summary>
+    //Ventana de la sala de grandes mamiferos
     public partial class SalaGrandesMamiferos : Window
     {
         public SalaGrandesMamiferos()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver a la pantalla de las salas
         private void Atras(object sender, RoutedEventArgs e)
         {
             new Salas().Show();

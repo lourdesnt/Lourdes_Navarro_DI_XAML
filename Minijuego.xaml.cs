@@ -12,9 +12,7 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para Minijuego.xaml
-    /// </summary>
+    //Ventana del minijuego
     public partial class Minijuego : Window
     {
         public Minijuego()
@@ -22,6 +20,8 @@ namespace Lourdes_Navarro_DI_XAML
             InitializeComponent();
 
         }
+
+        //Metodo para la burbuja que contendra la estrella de mar
         private void isStar(object sender, RoutedEventArgs e)
         {
             (sender as Button).Visibility = Visibility.Hidden;
@@ -29,6 +29,9 @@ namespace Lourdes_Navarro_DI_XAML
             new Win().Show();
             this.Close();
         }
+
+        //Metodos para las burbujas que contendran el erizo de mar
+
         private void isErizo1(object sender, RoutedEventArgs e)
         {
             (sender as Button).Visibility = Visibility.Hidden;
@@ -51,11 +54,14 @@ namespace Lourdes_Navarro_DI_XAML
             this.Close();
         }
 
+        //Metodo para las demas burbujas que no contienen nada
+
         private void isEmpty(object sender, RoutedEventArgs e)
         {
             (sender as Button).Visibility = Visibility.Hidden;
         }
 
+        //Metodo para volver al menú
         private void Home(object sender, RoutedEventArgs e)
         {
             new AppPrincipal().Show();

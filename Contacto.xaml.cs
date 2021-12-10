@@ -12,15 +12,15 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para Contacto.xaml
-    /// </summary>
+    //Ventana de contacto
     public partial class Contacto : Window
     {
         public Contacto()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver al menú
         private void Home(object sender, RoutedEventArgs e)
         {
             new AppPrincipal().Show();

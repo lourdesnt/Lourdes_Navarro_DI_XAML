@@ -12,21 +12,22 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para GameOver.xaml
-    /// </summary>
+    //Ventana de derrota
     public partial class GameOver : Window
     {
         public GameOver()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver a la pantalla de minijuego
         private void Game(object sender, RoutedEventArgs e)
         {
             new Minijuego().Show();
             this.Close();
         }
 
+        //Metodo para volver a la ventana del menú
         private void Home(object sender, RoutedEventArgs e)
         {
             new AppPrincipal().Show();

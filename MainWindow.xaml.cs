@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    // Ventana principal de la Aplicacion
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,6 +23,7 @@ namespace Lourdes_Navarro_DI_XAML
             InitializeComponent();
         }
 
+        //Metodo para acceder a la ventana con los diferentes apartados
         private void goApp(object sender, RoutedEventArgs e)
         {
             new AppPrincipal().Show();

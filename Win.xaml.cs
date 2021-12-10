@@ -12,21 +12,22 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para Win.xaml
-    /// </summary>
+    //Ventana de victoria
     public partial class Win : Window
     {
         public Win()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver a la pantalla de minijuego
         private void Game(object sender, RoutedEventArgs e)
         {
             new Minijuego().Show();
             this.Close();
         }
 
+        //Metodo para volver a la ventana del menú
         private void Home(object sender, RoutedEventArgs e)
         {
             new AppPrincipal().Show();

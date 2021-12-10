@@ -13,9 +13,7 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para ControlWindow.xaml
-    /// </summary>
+    //Logica de la ventana de control de piscinas
     public partial class ControlWindow : Window
     {
         public static ControlPiscinas logica = new ControlPiscinas();
@@ -25,18 +23,22 @@ namespace Lourdes_Navarro_DI_XAML
             DataGridPiscinas.DataContext = logica;
         }
 
+        //Metodo para agregar una piscina
         private void AgregarPiscina(object sender, RoutedEventArgs e)
         {
-            new Formulario_Piscinas().Show();
+            new Formulario_Piscinas().Show(); //Se abrirá el formulario configurado para que se añada una nueva piscina
         }
 
+        //Metodo para modificar una piscina
         private void EditarPiscina(object sender, RoutedEventArgs e)
         {
             if(DataGridPiscinas.SelectedIndex != -1)
             {
-                new Formulario_Piscinas(DataGridPiscinas.SelectedIndex).Show();
+                new Formulario_Piscinas(DataGridPiscinas.SelectedIndex).Show(); //Se abrirá el formulario configurado para modificar una piscina ya existente
             }
         }
+
+        //Metodo para eliminar una piscina
         private void EliminarPiscina(object sender, RoutedEventArgs e)
         {
             if (DataGridPiscinas.SelectedIndex != -1)
@@ -45,6 +47,7 @@ namespace Lourdes_Navarro_DI_XAML
             }
         }
 
+        //Metodo para volver a la ventana del menú
         private void Home(object sender, RoutedEventArgs e)
         {
             new AppPrincipal().Show();

@@ -12,9 +12,7 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para AppPrincipal.xaml
-    /// </summary>
+    // Ventana donde se encuentran los diferentes apartados de la aplicacion
     public partial class AppPrincipal : Window
     {
         public AppPrincipal()
@@ -22,6 +20,7 @@ namespace Lourdes_Navarro_DI_XAML
             InitializeComponent();
         }
 
+        //Metodo para acceder a la ventana de control de piscinas
         private void goControl(object sender, RoutedEventArgs e)
         {
             new ControlWindow().Show();
@@ -29,6 +28,7 @@ namespace Lourdes_Navarro_DI_XAML
 
         }
 
+        //Metodo para acceder a la ventana de salas del acuario
         private void goSalas(object sender, RoutedEventArgs e)
         {
             new Salas().Show();
@@ -36,6 +36,7 @@ namespace Lourdes_Navarro_DI_XAML
 
         }
 
+        //Metodo para acceder a la ventana de minijuego
         private void goMinijuego(object sender, RoutedEventArgs e)
         {
             new Minijuego().Show();
@@ -43,6 +44,7 @@ namespace Lourdes_Navarro_DI_XAML
 
         }
 
+        //Metodo para acceder a la ventana de contacto
         private void goContacto(object sender, RoutedEventArgs e)
         {
             new Contacto().Show();
@@ -50,6 +52,7 @@ namespace Lourdes_Navarro_DI_XAML
 
         }
 
+        //Metodo para volver a la ventana de inicio
         private void Home(object sender, RoutedEventArgs e)
         {
             new MainWindow().Show();

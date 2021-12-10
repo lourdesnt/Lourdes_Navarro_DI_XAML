@@ -12,15 +12,15 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para SalaTropical.xaml
-    /// </summary>
+    //Ventana de la sala tropical
     public partial class SalaTropical : Window
     {
         public SalaTropical()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver a la pantalla de las salas
         private void Atras(object sender, RoutedEventArgs e)
         {
             new Salas().Show();

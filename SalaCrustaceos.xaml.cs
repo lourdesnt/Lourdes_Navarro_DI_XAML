@@ -12,15 +12,15 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para SalaCrustaceos.xaml
-    /// </summary>
+    //Ventana de la sala de crustaceos
     public partial class SalaCrustaceos : Window
     {
         public SalaCrustaceos()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver a la pantalla de las salas
         private void Atras(object sender, RoutedEventArgs e)
         {
             new Salas().Show();

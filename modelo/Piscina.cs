@@ -6,9 +6,11 @@ using System.Windows.Controls;
 
 namespace Lourdes_Navarro_DI_XAML.modelo
 {
-
+    //Clase Piscina
     public class Piscina : INotifyPropertyChanged, IDataErrorInfo
     {
+
+        //Atributos de la piscina
         
         public string sala;
         public string Sala
@@ -65,6 +67,8 @@ namespace Lourdes_Navarro_DI_XAML.modelo
             }
         }
 
+        //Metodos para la validacion del formulario
+
         public string Error => throw new NotImplementedException();
 
         public string this[string columnName]
@@ -98,11 +102,13 @@ namespace Lourdes_Navarro_DI_XAML.modelo
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        //Constructor vacio
         public Piscina()
         {
 
         }
 
+        //Constructor con parametros
         public Piscina(string sala, string temperatura, string especies, DateTime ultimaRevision, string tratamiento)
         {
             this.sala = sala;

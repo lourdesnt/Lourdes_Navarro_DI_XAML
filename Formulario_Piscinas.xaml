@@ -30,7 +30,7 @@
     </Window.Resources>
     <Grid>
         <Image Source="/form_bg.jpg" Stretch="UniformToFill"></Image>
-        <StackPanel Margin="32,37,256,136" Width="92">
+        <StackPanel Margin="32,37,250,136">
             <Label Margin="0,0,0,5" Content="Sala" Height="23"></Label>
             <Label Content="Temperatura" Height="28"></Label>
             <Label Content="Especies" Height="27"></Label>

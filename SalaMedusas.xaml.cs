@@ -12,15 +12,15 @@ using System.Windows.Shapes;
 
 namespace Lourdes_Navarro_DI_XAML
 {
-    /// <summary>
-    /// Lógica de interacción para SalaMedusas.xaml
-    /// </summary>
+    //Ventana de la sala de medusas
     public partial class SalaMedusas : Window
     {
         public SalaMedusas()
         {
             InitializeComponent();
         }
+
+        //Metodo para volver a la pantalla de salas
         private void Atras(object sender, RoutedEventArgs e)
         {
             new Salas().Show();
